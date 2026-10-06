@@ -1,0 +1,706 @@
+{
+  "title": "Voice — One coin. A voice of its own.",
+  "fps": 60,
+  "duration": 24,
+  "motionBlurSubframes": 1,
+  "audio": {
+    "music": "audio/out/music.wav",
+    "beats": "audio/out/beats.json",
+    "sfx": "audio/out/sfx.wav",
+    "mix": "audio/out/mix.wav",
+    "bpm": 120,
+    "targetLufs": -14,
+    "truePeakMax": -1
+  },
+  "formats": {
+    "16x9": {
+      "w": 1920,
+      "h": 1080,
+      "ship": true
+    }
+  },
+  "shots": [
+    {
+      "id": "s01-hook",
+      "beat": 0,
+      "act": "Silence",
+      "caption": [
+        "Launching a coin",
+        "takes seconds."
+      ],
+      "start": 0,
+      "end": 2
+    },
+    {
+      "id": "s02-quiet",
+      "beat": 4,
+      "act": "Silence",
+      "caption": [
+        "Then it goes quiet."
+      ],
+      "start": 2,
+      "end": 4
+    },
+    {
+      "id": "s03-reveal",
+      "beat": 8,
+      "act": "Voice",
+      "caption": [
+        "One coin.",
+        "One X Manager."
+      ],
+      "start": 4,
+      "end": 6
+    },
+    {
+      "id": "s04-create",
+      "beat": 12,
+      "act": "Creation",
+      "caption": [
+        "Create the coin."
+      ],
+      "start": 6,
+      "end": 8
+    },
+    {
+      "id": "s05-mic",
+      "beat": 16,
+      "act": "Configuration",
+      "caption": [
+        "Give it",
+        "the mic."
+      ],
+      "step": 4,
+      "stepTitle": "Connect Official X",
+      "start": 8,
+      "end": 9
+    },
+    {
+      "id": "s06-brain",
+      "beat": 18,
+      "act": "Configuration",
+      "caption": [
+        "Give it",
+        "a brain."
+      ],
+      "step": 5,
+      "stepTitle": "Choose Brain / Model",
+      "start": 9,
+      "end": 10
+    },
+    {
+      "id": "s07-character",
+      "beat": 20,
+      "act": "Configuration",
+      "caption": [
+        "Give it",
+        "a character."
+      ],
+      "step": 8,
+      "stepTitle": "Personality",
+      "start": 10,
+      "end": 11
+    },
+    {
+      "id": "s08-boundaries",
+      "beat": 22,
+      "act": "Configuration",
+      "caption": [
+        "Give it",
+        "boundaries."
+      ],
+      "step": 11,
+      "stepTitle": "X Action Permissions",
+      "start": 11,
+      "end": 12
+    },
+    {
+      "id": "s09-budget",
+      "beat": 24,
+      "act": "Configuration",
+      "caption": [
+        "Give it",
+        "a budget."
+      ],
+      "step": 12,
+      "stepTitle": "Budget / Funding",
+      "start": 12,
+      "end": 13
+    },
+    {
+      "id": "s10-launch",
+      "beat": 26,
+      "act": "Launch",
+      "caption": [
+        "Launch them",
+        "together."
+      ],
+      "step": 15,
+      "stepTitle": "Wallet sign",
+      "start": 13,
+      "end": 14
+    },
+    {
+      "id": "s11-wake",
+      "beat": 28,
+      "act": "Activity",
+      "caption": [
+        "It thinks",
+        "before it speaks."
+      ],
+      "start": 14,
+      "end": 15.5
+    },
+    {
+      "id": "s12-reply",
+      "beat": 31,
+      "act": "Activity",
+      "caption": [
+        "It thinks",
+        "before it speaks."
+      ],
+      "start": 15.5,
+      "end": 18.5
+    },
+    {
+      "id": "s13-learn",
+      "beat": 37,
+      "act": "Learning",
+      "caption": [
+        "It learns",
+        "your voice."
+      ],
+      "start": 18.5,
+      "end": 20
+    },
+    {
+      "id": "s14-choice",
+      "beat": 40,
+      "act": "Identity",
+      "caption": [
+        "Now quiet",
+        "is a choice."
+      ],
+      "start": 20,
+      "end": 21
+    },
+    {
+      "id": "s15-collapse",
+      "beat": 42,
+      "act": "Identity",
+      "caption": [
+        "Now quiet",
+        "is a choice."
+      ],
+      "start": 21,
+      "end": 22
+    },
+    {
+      "id": "s16-end",
+      "beat": 44,
+      "act": "End",
+      "caption": [
+        "One coin.",
+        "A voice of its own."
+      ],
+      "cta": "tryvoice.fun",
+      "start": 22,
+      "end": 24
+    }
+  ],
+  "events": [
+    {
+      "id": "card-pop",
+      "beat": 2,
+      "sfx": "pop",
+      "what": "coin preview card lands",
+      "t": 1,
+      "target": "#preview"
+    },
+    {
+      "id": "live-pill",
+      "beat": 3,
+      "sfx": "tick",
+      "what": "LIVE pill",
+      "t": 1.5,
+      "target": "#pvLive"
+    },
+    {
+      "id": "day-1",
+      "beat": 5,
+      "sfx": null,
+      "what": "DAY 1 marker (music tick)",
+      "t": 2.5
+    },
+    {
+      "id": "day-2",
+      "beat": 6,
+      "sfx": null,
+      "what": "DAY 2 marker (music tick)",
+      "t": 3
+    },
+    {
+      "id": "day-3",
+      "beat": 7,
+      "sfx": null,
+      "what": "DAY 7 marker (music tick)",
+      "t": 3.5
+    },
+    {
+      "id": "day-4",
+      "beat": 8,
+      "sfx": null,
+      "what": "DAY 30 marker (music tick)",
+      "t": 4
+    },
+    {
+      "id": "spike-1",
+      "beat": 9,
+      "sfx": null,
+      "what": "pulse spike (music heartbeat)",
+      "t": 4.4982
+    },
+    {
+      "id": "spike-2",
+      "beat": 9.44,
+      "sfx": null,
+      "what": "second spike (music heartbeat)",
+      "t": 4.719
+    },
+    {
+      "id": "pulse-contract",
+      "beat": 9.56,
+      "sfx": "whoosh",
+      "what": "pulse contracts into the mark",
+      "len": 0.22,
+      "t": 4.7792,
+      "target": "#strokeSvg",
+      "peak": 0.1247
+    },
+    {
+      "id": "logo-hit",
+      "beat": 10,
+      "sfx": null,
+      "what": "logo tile lands (music hit)",
+      "t": 5
+    },
+    {
+      "id": "line-one-coin",
+      "beat": 10.5,
+      "sfx": null,
+      "what": "One coin.",
+      "t": 5.25
+    },
+    {
+      "id": "line-x-manager",
+      "beat": 11,
+      "sfx": null,
+      "what": "One X Manager.",
+      "t": 5.5
+    },
+    {
+      "id": "tile-fly",
+      "beat": 11.7,
+      "sfx": "whoosh",
+      "what": "logo tile flies into the coin avatar",
+      "len": 0.3,
+      "t": 5.85,
+      "target": "#tile",
+      "peak": 0.161
+    },
+    {
+      "id": "type-name",
+      "beat": 12.5,
+      "sfx": "type",
+      "what": "name: Orbit",
+      "len": 0.2,
+      "t": 6.25,
+      "target": "#inName"
+    },
+    {
+      "id": "type-ticker",
+      "beat": 13.2,
+      "sfx": "type",
+      "what": "ticker: ORBIT",
+      "len": 0.15,
+      "t": 6.6,
+      "target": "#inTicker"
+    },
+    {
+      "id": "substep-2",
+      "beat": 13.7,
+      "sfx": "tick",
+      "what": "Story & links",
+      "t": 6.85,
+      "target": "#wizTitleB"
+    },
+    {
+      "id": "type-story",
+      "beat": 13.8,
+      "sfx": "type",
+      "what": "story",
+      "len": 0.55,
+      "t": 6.9,
+      "target": "#inStory"
+    },
+    {
+      "id": "click-continue",
+      "beat": 15.5,
+      "sfx": "click",
+      "what": "Continue to Part 2 · Give it a voice",
+      "t": 7.75,
+      "target": "#btnContinue"
+    },
+    {
+      "id": "roll-mic",
+      "beat": 16,
+      "sfx": "roll",
+      "what": "word roll: the mic",
+      "t": 8,
+      "target": "#slotB"
+    },
+    {
+      "id": "click-connect",
+      "beat": 16.6,
+      "sfx": "click",
+      "what": "Connect Official X",
+      "t": 8.3,
+      "target": "#btnConnect"
+    },
+    {
+      "id": "x-connected",
+      "beat": 17.2,
+      "sfx": "pop",
+      "what": "X connected",
+      "t": 8.6,
+      "target": "#xConnected"
+    },
+    {
+      "id": "roll-brain",
+      "beat": 18,
+      "sfx": "roll",
+      "what": "word roll: a brain",
+      "t": 9,
+      "target": "#slotB"
+    },
+    {
+      "id": "click-luna",
+      "beat": 18.7,
+      "sfx": "click",
+      "what": "select GPT-6 Luna",
+      "t": 9.35,
+      "target": "#mcLuna"
+    },
+    {
+      "id": "roll-character",
+      "beat": 20,
+      "sfx": "roll",
+      "what": "word roll: a character",
+      "t": 10,
+      "target": "#slotB"
+    },
+    {
+      "id": "click-ctnative",
+      "beat": 20.3,
+      "sfx": "click",
+      "what": "voice style CT Native",
+      "t": 10.15,
+      "target": "#presetCT"
+    },
+    {
+      "id": "slider-1",
+      "beat": 20.6,
+      "sfx": "tick",
+      "what": "Humor -> 85",
+      "t": 10.3,
+      "target": "#sv1"
+    },
+    {
+      "id": "slider-2",
+      "beat": 20.9,
+      "sfx": "tick",
+      "what": "Creative spontaneity -> 60",
+      "t": 10.45,
+      "target": "#sv2"
+    },
+    {
+      "id": "slider-3",
+      "beat": 21.2,
+      "sfx": "tick",
+      "what": "Story & lore -> 50",
+      "t": 10.6,
+      "target": "#sv3"
+    },
+    {
+      "id": "roll-boundaries",
+      "beat": 22,
+      "sfx": "roll",
+      "what": "word roll: boundaries",
+      "t": 11,
+      "target": "#slotB"
+    },
+    {
+      "id": "toggle-1",
+      "beat": 22.3,
+      "sfx": "tick",
+      "what": "Original posts ON",
+      "t": 11.15,
+      "target": "#pc1 .toggle-track"
+    },
+    {
+      "id": "toggle-2",
+      "beat": 22.5,
+      "sfx": "tick",
+      "what": "Reply to community ON",
+      "t": 11.25,
+      "target": "#pc2 .toggle-track"
+    },
+    {
+      "id": "toggle-3",
+      "beat": 22.7,
+      "sfx": "tick",
+      "what": "Quote posts ON",
+      "t": 11.35,
+      "target": "#pc3 .toggle-track"
+    },
+    {
+      "id": "click-approval",
+      "beat": 23.2,
+      "sfx": "click",
+      "what": "Approval Mode",
+      "t": 11.6,
+      "target": "#chApproval"
+    },
+    {
+      "id": "roll-budget",
+      "beat": 24,
+      "sfx": "roll",
+      "what": "word roll: a budget",
+      "t": 12,
+      "target": "#slotB"
+    },
+    {
+      "id": "click-deposit",
+      "beat": 24.5,
+      "sfx": "click",
+      "what": "Deposit USDC",
+      "t": 12.25,
+      "target": "#btnDeposit"
+    },
+    {
+      "id": "count",
+      "beat": 24.7,
+      "sfx": "count",
+      "what": "operating balance $0.00 -> $25.00",
+      "len": 0.45,
+      "t": 12.35,
+      "target": "#balVal"
+    },
+    {
+      "id": "review",
+      "beat": 26,
+      "sfx": "whoosh",
+      "what": "review sheet",
+      "len": 0.3,
+      "t": 13,
+      "target": "#pgReview",
+      "peak": 0.061
+    },
+    {
+      "id": "click-sign",
+      "beat": 26.8,
+      "sfx": "click",
+      "what": "Review & sign in wallet",
+      "t": 13.3988,
+      "target": "#btnSign"
+    },
+    {
+      "id": "signed",
+      "beat": 27.4,
+      "sfx": "tick",
+      "what": "signed",
+      "t": 13.6991,
+      "target": "#signState"
+    },
+    {
+      "id": "activate",
+      "beat": 28,
+      "sfx": "thump",
+      "what": "manager activates: PAUSED -> RUNNING",
+      "t": 14,
+      "target": "#bRunning"
+    },
+    {
+      "id": "notice",
+      "beat": 28.6,
+      "sfx": null,
+      "what": "Your manager is active. Its launch hour has started.",
+      "t": 14.3
+    },
+    {
+      "id": "dec-1",
+      "beat": 29,
+      "sfx": "check",
+      "what": "Read new mentions",
+      "t": 14.5,
+      "target": "#d1"
+    },
+    {
+      "id": "dec-2",
+      "beat": 29.5,
+      "sfx": "check",
+      "what": "One worth answering",
+      "t": 14.75,
+      "target": "#d2"
+    },
+    {
+      "id": "dec-3",
+      "beat": 30,
+      "sfx": "check",
+      "what": "Reply drafted in your voice",
+      "t": 15,
+      "target": "#d3"
+    },
+    {
+      "id": "dec-4",
+      "beat": 30.5,
+      "sfx": "tick",
+      "what": "Waiting for your approval",
+      "t": 15.25,
+      "target": "#d4"
+    },
+    {
+      "id": "to-queue",
+      "beat": 31,
+      "sfx": "whoosh",
+      "what": "into the approval queue",
+      "len": 0.3,
+      "t": 15.5,
+      "target": "#queuePanel",
+      "peak": 0.2267
+    },
+    {
+      "id": "memory",
+      "beat": 29.25,
+      "sfx": "tick",
+      "what": "memory recall @cosmicdegen (between read mentions and one worth answering)",
+      "t": 14.625,
+      "target": "#memoryChip"
+    },
+    {
+      "id": "type-draft",
+      "beat": 32.4,
+      "sfx": "type",
+      "what": "draft reply",
+      "len": 0.75,
+      "t": 16.2,
+      "target": "#draftText"
+    },
+    {
+      "id": "click-approve",
+      "beat": 35,
+      "sfx": "click",
+      "what": "Approve & publish",
+      "t": 17.5,
+      "target": "#btnApprove"
+    },
+    {
+      "id": "published",
+      "beat": 35.3,
+      "sfx": "pop",
+      "what": "Published",
+      "t": 17.65,
+      "target": "#draftPublished"
+    },
+    {
+      "id": "to-feedback",
+      "beat": 37,
+      "sfx": "whoosh",
+      "what": "to feedback",
+      "len": 0.25,
+      "t": 18.5,
+      "target": "#btnMore",
+      "peak": 0.1257
+    },
+    {
+      "id": "click-more",
+      "beat": 37.7,
+      "sfx": "click",
+      "what": "More like this",
+      "t": 18.85,
+      "target": "#btnMore"
+    },
+    {
+      "id": "saved-more",
+      "beat": 38,
+      "sfx": "pop",
+      "what": "Saved as more like this",
+      "t": 19,
+      "target": "#savedNotice"
+    },
+    {
+      "id": "choice-row",
+      "beat": 40,
+      "sfx": null,
+      "what": "Chose to do nothing (music dead stop + tick)",
+      "t": 20
+    },
+    {
+      "id": "pullback",
+      "beat": 41,
+      "sfx": null,
+      "what": "camera pulls back over the feed",
+      "t": 20.4988
+    },
+    {
+      "id": "collapse",
+      "beat": 42,
+      "sfx": "whoosh",
+      "what": "feed collapses to the line",
+      "len": 0.5,
+      "t": 20.9988,
+      "target": "#collapseLines",
+      "peak": 0.1847
+    },
+    {
+      "id": "end-hit",
+      "beat": 44,
+      "sfx": null,
+      "what": "end lockup (music hit)",
+      "t": 22
+    },
+    {
+      "id": "end-line-1",
+      "beat": 44.3,
+      "sfx": null,
+      "what": "One coin.",
+      "t": 22.1497
+    },
+    {
+      "id": "end-line-2",
+      "beat": 44.6,
+      "sfx": null,
+      "what": "A voice of its own.",
+      "t": 22.2993
+    },
+    {
+      "id": "cta",
+      "beat": 44.8,
+      "sfx": "shutter",
+      "what": "CTA lands",
+      "t": 22.3991,
+      "target": "#cta"
+    }
+  ],
+  "beatGrid": {
+    "source": "audio/out/beats.json",
+    "bpm": 119.995,
+    "phase": -0.002,
+    "measured": 38,
+    "total": 49,
+    "devMs": {
+      "mean": 1.57,
+      "max": 2
+    }
+  }
+}

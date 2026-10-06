@@ -1,0 +1,214 @@
+{
+ "file": "review/r3/16x9.mp4",
+ "width": 1920,
+ "height": 1080,
+ "fps": 60.0,
+ "duration": 24.0,
+ "codec": "h264",
+ "profile": "High",
+ "pix_fmt": "yuv420p",
+ "color": {
+  "space": "bt709",
+  "primaries": "bt709",
+  "transfer": "bt709",
+  "range": "tv"
+ },
+ "bitrate_kbps": 5658,
+ "audio": {
+  "codec": "aac",
+  "sr": "48000",
+  "kbps": 311
+ },
+ "loudness": {
+  "integrated_lufs": -14.0,
+  "lra": 7.5,
+  "true_peak_dbtp": -1.3,
+  "seam_last_ms_rms_db": -67.9,
+  "seam_first_ms_rms_db": -12.5,
+  "seam_jump": 0.0439
+ },
+ "holds_over_0_8s": [
+  [
+   2.75,
+   1.58
+  ],
+  [
+   16.0,
+   0.8
+  ],
+  [
+   22.72,
+   1.27
+  ]
+ ],
+ "fastest_motion_t": [
+  14.0,
+  15.75,
+  18.683,
+  21.3
+ ],
+ "mean_motion_per_second": [
+  0.36,
+  0.2,
+  1.16,
+  0.14,
+  0.81,
+  1.56,
+  1.1,
+  0.47,
+  1.04,
+  1.87,
+  0.89,
+  0.94,
+  0.8,
+  3.07,
+  1.32,
+  3.06,
+  0.24,
+  0.58,
+  1.51,
+  0.53,
+  0.64,
+  3.01,
+  1.13,
+  0.15
+ ],
+ "first_frame_mean_luma": 19.3,
+ "sync_checked": 45,
+ "sync_off_by_more_than_4_frames": [
+  {
+   "id": "pulse-contract",
+   "t": 4.7792,
+   "visual_peak_offset_frames": 5,
+   "change": 3.8
+  },
+  {
+   "id": "click-connect",
+   "t": 8.3,
+   "visual_peak_offset_frames": -6,
+   "change": 2.3
+  },
+  {
+   "id": "click-ctnative",
+   "t": 10.15,
+   "visual_peak_offset_frames": -5,
+   "change": 5.01
+  },
+  {
+   "id": "slider-1",
+   "t": 10.3,
+   "visual_peak_offset_frames": -6,
+   "change": 1.51
+  },
+  {
+   "id": "slider-2",
+   "t": 10.45,
+   "visual_peak_offset_frames": -5,
+   "change": 0.59
+  },
+  {
+   "id": "toggle-1",
+   "t": 11.15,
+   "visual_peak_offset_frames": -5,
+   "change": 5.37
+  },
+  {
+   "id": "toggle-2",
+   "t": 11.25,
+   "visual_peak_offset_frames": -6,
+   "change": 2.49
+  },
+  {
+   "id": "toggle-3",
+   "t": 11.35,
+   "visual_peak_offset_frames": -5,
+   "change": 0.81
+  },
+  {
+   "id": "click-deposit",
+   "t": 12.25,
+   "visual_peak_offset_frames": -6,
+   "change": 1.99
+  },
+  {
+   "id": "count",
+   "t": 12.35,
+   "visual_peak_offset_frames": -5,
+   "change": 0.62
+  },
+  {
+   "id": "signed",
+   "t": 13.6991,
+   "visual_peak_offset_frames": -6,
+   "change": 1.51
+  },
+  {
+   "id": "dec-2",
+   "t": 14.75,
+   "visual_peak_offset_frames": -5,
+   "change": 0.74
+  },
+  {
+   "id": "dec-4",
+   "t": 15.25,
+   "visual_peak_offset_frames": 6,
+   "change": 0.58
+  },
+  {
+   "id": "to-queue",
+   "t": 15.5,
+   "visual_peak_offset_frames": 6,
+   "change": 6.42
+  },
+  {
+   "id": "click-approve",
+   "t": 17.5,
+   "visual_peak_offset_frames": -6,
+   "change": 0.66
+  },
+  {
+   "id": "to-feedback",
+   "t": 18.5,
+   "visual_peak_offset_frames": 6,
+   "change": 3.24
+  },
+  {
+   "id": "click-more",
+   "t": 18.85,
+   "visual_peak_offset_frames": -6,
+   "change": 3.27
+  },
+  {
+   "id": "collapse",
+   "t": 20.9988,
+   "visual_peak_offset_frames": 6,
+   "change": 4.29
+  }
+ ],
+ "sync_no_visual_change": [
+  {
+   "id": "live-pill",
+   "t": 1.5,
+   "visual_peak_offset_frames": 2,
+   "change": 0.14
+  },
+  {
+   "id": "slider-3",
+   "t": 10.6,
+   "visual_peak_offset_frames": 3,
+   "change": 0.31
+  },
+  {
+   "id": "dec-3",
+   "t": 15,
+   "visual_peak_offset_frames": -1,
+   "change": 0.24
+  },
+  {
+   "id": "type-draft",
+   "t": 16.2,
+   "visual_peak_offset_frames": 2,
+   "change": 0.15
+  }
+ ]
+}

@@ -1,0 +1,61 @@
+Example control room · activity is illustrative and it holds no funds
+Create your own coin
+My X Managers
+O
+X MANAGER
+RUNNING · APPROVAL MODE
+Orbit $ORBIT
+
+@orbitonsolana
+GPT-6.1 Sol
+CT Degen
+
+Pause manager
+Emergency stop
+Coin overview
+Teach Manager
+Live activity
+Performance
+Memory
+Personality
+Change Brain
+Treasury
+X account
+Settings
+Spending limits
+
+Hard ceilings for this manager. Every charge is checked against them before it happens; the day resets at 00:00 UTC.
+
+Daily maximum (USD)
+All activity in one day.
+Per-action maximum (USD)
+No single charge may exceed this.
+Brain / model ceiling (USD per day)
+Funding source
+Deposits · USDC operating balance
+Launch hour
+
+For the first hour after launch the manager can be more active, with its own budget so it never spends the whole day at once. Set the budget to 0 to skip it.
+
+Launch-hour budget (USD)
+Part of the daily maximum, not extra.
+Launch-hour activity
+Light · up to 6 actions
+Standard · up to 12 actions
+Busy · up to 15 actions
+A ceiling, never a quota.
+Resume automatically after new funds arrive or the daily limit resets
+Save limits
+Human control
+
+Choose how drafts become external actions.
+
+Approval Mode
+
+The manager researches and prepares actions; you review every draft before anything is posted.
+
+Autonomous Mode
+
+Publishes allowed actions within your permissions, budget and safety rules without waiting for you.
+
+Factual claims, announcements, media and endorsements still require your review in autonomous mode.

@@ -1,0 +1,12 @@
+node_modules/
+capture/refs/*.mp4
+renders/draft/
+review/**/stills*/
+review/**/*.png
+!review/**/first_frame.png
+!review/**/end_card.png
+*.log
+review/*/16x9.mp4
+review/r0/
+review/*pre/
+review/detdiag/

@@ -1,0 +1,25 @@
+{
+  "name": "voice-film",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smidgyy/video.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/smidgyy/video/issues"
+  },
+  "homepage": "https://github.com/smidgyy/video#readme",
+  "type": "module",
+  "private": "true",
+  "devDependencies": {
+    "playwright": "1.56"
+  }
+}

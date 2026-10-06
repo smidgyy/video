@@ -1,0 +1,100 @@
+Example control room · activity is illustrative and it holds no funds
+Create your own coin
+My X Managers
+O
+X MANAGER
+RUNNING · APPROVAL MODE
+Orbit $ORBIT
+
+@orbitonsolana
+GPT-6.1 Sol
+CT Degen
+
+Pause manager
+Emergency stop
+Coin overview
+Teach Manager
+Live activity
+Performance
+Memory
+Personality
+Change Brain
+Treasury
+X account
+Settings
+The intelligence behind the identity.
+
+Only the brain changes. Identity, teaching, learned preferences, memory and examples stay with this manager; Voice checks that after every switch.
+
+OpenAI
+One X Manager · choose its brain
+Fast & economical
+GPT-6 Luna
+
+High-volume monitoring and focused decisions.
+
+gpt-6-luna
+VERIFIED · READY
+
+Authenticated and completed a real model test call.
+
+Fast latency
+Focused decisions
+Native tool support
+$0.1 input · $0.5 output
+per 1M tokens · standard API pricing
+RECOMMENDED
+The balanced voice
+GPT-6.1 Sol
+
+Strong creative judgment, without the premium overhead.
+
+gpt-6.1-sol
+NEEDS VERIFICATION
+
+Verify this model with a real server-side test call before assigning it.
+
+Balanced latency
+Creative judgment
+Native tool support
+$2 input · $10 output
+per 1M tokens · standard API pricing
+Deep reasoning
+GPT-6 Astra
+
+Complex context and nuanced community situations.
+
+gpt-6-astra
+NEEDS VERIFICATION
+
+Verify this model with a real server-side test call before assigning it.
+
+Deliberate latency
+Complex reasoning
+Native tool support
+$10 input · $50 output
+per 1M tokens · standard API pricing
+GPT-6.1 Sol: Needs verification
+
+Verify this model with a real server-side test call before assigning it.
+
+Verify selected brainUses a small real provider call. No coin funds are spent.
+Reasoning effort
+Low · efficient
+Medium · balanced
+High · deeper analysis
+Fallback model
+Disabled
+GPT-6 Luna · openai
+Change brain
+INPUT TOKENS RECORDED
+0
+OUTPUT TOKENS RECORDED
+0
+MODEL SPEND RECORDED
+$0.0000
+PROVIDER
+OpenAI
+Brain history
+GPT-6.1 Sol
+03/10/2026, 14:24:00
