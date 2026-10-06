@@ -1,0 +1,478 @@
+[
+ {
+  "id": "card-1",
+  "sfx": "card_thup",
+  "t": 0.1844,
+  "peak_db": -25.6,
+  "music_local_db": -12.6
+ },
+ {
+  "id": "card-2",
+  "sfx": "card_thup",
+  "t": 0.3568,
+  "peak_db": -25.6,
+  "music_local_db": -12.6
+ },
+ {
+  "id": "card-3",
+  "sfx": "card_thup",
+  "t": 0.7017,
+  "peak_db": -25.5,
+  "music_local_db": -12.5
+ },
+ {
+  "id": "card-4",
+  "sfx": "card_thup",
+  "t": 0.8741,
+  "peak_db": -25.5,
+  "music_local_db": -12.5
+ },
+ {
+  "id": "card-5",
+  "sfx": "card_thup",
+  "t": 1.2189,
+  "peak_db": -25.5,
+  "music_local_db": -12.5
+ },
+ {
+  "id": "card-6",
+  "sfx": "card_thup",
+  "t": 1.5637,
+  "peak_db": -25.5,
+  "music_local_db": -12.5
+ },
+ {
+  "id": "card-7",
+  "sfx": "card_thup",
+  "t": 1.7362,
+  "peak_db": -25.5,
+  "music_local_db": -12.5
+ },
+ {
+  "id": "card-8",
+  "sfx": "card_thup",
+  "t": 2.081,
+  "peak_db": -25.5,
+  "music_local_db": -12.5
+ },
+ {
+  "id": "card-orbit",
+  "sfx": "card_thup",
+  "t": 2.4258,
+  "peak_db": -25.8,
+  "music_local_db": -12.8
+ },
+ {
+  "id": "word-1",
+  "sfx": "tape_rasp",
+  "t": 0.012,
+  "peak_db": -31.6,
+  "music_local_db": -12.6
+ },
+ {
+  "id": "word-2",
+  "sfx": "tape_rasp",
+  "t": 0.3568,
+  "peak_db": -31.6,
+  "music_local_db": -12.6
+ },
+ {
+  "id": "word-3",
+  "sfx": "tape_rasp",
+  "t": 0.7017,
+  "peak_db": -31.5,
+  "music_local_db": -12.5
+ },
+ {
+  "id": "word-4",
+  "sfx": "tape_rasp",
+  "t": 1.0465,
+  "peak_db": -31.5,
+  "music_local_db": -12.5
+ },
+ {
+  "id": "tape-lift",
+  "sfx": "crackle",
+  "t": 3.6327,
+  "peak_db": -28.0,
+  "music_local_db": -8.0
+ },
+ {
+  "id": "tube-1",
+  "sfx": "tube_tink",
+  "t": 3.9776,
+  "peak_db": -28.0,
+  "music_local_db": -8.0
+ },
+ {
+  "id": "tube-2",
+  "sfx": "tube_tink",
+  "t": 4.0638,
+  "peak_db": -28.0,
+  "music_local_db": -8.0
+ },
+ {
+  "id": "tube-3",
+  "sfx": "tube_tink",
+  "t": 4.1069,
+  "peak_db": -28.0,
+  "music_local_db": -8.0
+ },
+ {
+  "id": "then-off",
+  "sfx": "relay",
+  "t": 4.8397,
+  "peak_db": -23.0,
+  "music_local_db": -8.0
+ },
+ {
+  "id": "itgoes-off",
+  "sfx": "relay",
+  "t": 5.1845,
+  "peak_db": -34,
+  "music_local_db": -22.9
+ },
+ {
+  "id": "g12-dies",
+  "sfx": "relay",
+  "t": 5.3569,
+  "peak_db": -34,
+  "music_local_db": -32.7
+ },
+ {
+  "id": "slip-now",
+  "sfx": "paper_slide",
+  "t": 6.219,
+  "peak_db": -22.7,
+  "music_local_db": -8.7
+ },
+ {
+  "id": "key-1",
+  "sfx": "key",
+  "t": 8.6328,
+  "peak_db": -20.4,
+  "music_local_db": -8.4
+ },
+ {
+  "id": "key-2",
+  "sfx": "key",
+  "t": 8.8052,
+  "peak_db": -20.4,
+  "music_local_db": -8.4
+ },
+ {
+  "id": "door-open",
+  "sfx": "hinge",
+  "t": 9.3225,
+  "peak_db": -23.9,
+  "music_local_db": -7.9
+ },
+ {
+  "id": "luna-pick",
+  "sfx": "glass_tink",
+  "t": 9.6673,
+  "peak_db": -16.9,
+  "music_local_db": -7.9
+ },
+ {
+  "id": "dymo-brain-a",
+  "sfx": "dymo_ghost",
+  "t": 10.0121,
+  "peak_db": -24.9,
+  "music_local_db": -7.9
+ },
+ {
+  "id": "dymo-brain-b",
+  "sfx": "dymo_slap",
+  "t": 10.357,
+  "peak_db": -18.9,
+  "music_local_db": -7.9
+ },
+ {
+  "id": "humor-drag",
+  "sfx": "detents",
+  "t": 11.2191,
+  "peak_db": -29.2,
+  "music_local_db": -13.2
+ },
+ {
+  "id": "dymo-char-a",
+  "sfx": "dymo_ghost",
+  "t": 11.3915,
+  "peak_db": -30.2,
+  "music_local_db": -13.2
+ },
+ {
+  "id": "dymo-char-b",
+  "sfx": "dymo_slap",
+  "t": 11.7363,
+  "peak_db": -17.9,
+  "music_local_db": -6.9
+ },
+ {
+  "id": "toggle-1",
+  "sfx": "switch_thock",
+  "t": 12.5984,
+  "peak_db": -18.9,
+  "music_local_db": -6.9
+ },
+ {
+  "id": "toggle-2",
+  "sfx": "switch_thock",
+  "t": 12.6846,
+  "peak_db": -18.9,
+  "music_local_db": -6.9
+ },
+ {
+  "id": "toggle-3",
+  "sfx": "switch_thock",
+  "t": 12.7708,
+  "peak_db": -18.9,
+  "music_local_db": -6.9
+ },
+ {
+  "id": "dymo-bound-a",
+  "sfx": "dymo_ghost",
+  "t": 12.9432,
+  "peak_db": -23.9,
+  "music_local_db": -6.9
+ },
+ {
+  "id": "dymo-bound-b",
+  "sfx": "dymo_slap",
+  "t": 13.1156,
+  "peak_db": -17.6,
+  "music_local_db": -6.6
+ },
+ {
+  "id": "odometer",
+  "sfx": "ratchet",
+  "t": 13.9777,
+  "peak_db": -20.6,
+  "music_local_db": -6.6
+ },
+ {
+  "id": "dymo-budget-a",
+  "sfx": "dymo_ghost",
+  "t": 14.1501,
+  "peak_db": -23.6,
+  "music_local_db": -6.6
+ },
+ {
+  "id": "dymo-budget-b",
+  "sfx": "dymo_slap",
+  "t": 14.495,
+  "peak_db": -17.5,
+  "music_local_db": -6.5
+ },
+ {
+  "id": "sign-press",
+  "sfx": "button_thock",
+  "t": 15.1846,
+  "peak_db": -13.5,
+  "music_local_db": -6.5
+ },
+ {
+  "id": "sign-hang",
+  "sfx": "cord",
+  "t": 15.7019,
+  "peak_db": -24.5,
+  "music_local_db": -6.5
+ },
+ {
+  "id": "slats-close",
+  "sfx": "blinds_cascade",
+  "t": 16.0467,
+  "peak_db": -23.9,
+  "music_local_db": -11.9
+ },
+ {
+  "id": "switch-go",
+  "sfx": "switch",
+  "t": 16.3915,
+  "peak_db": -20.9,
+  "music_local_db": -11.9
+ },
+ {
+  "id": "ignition",
+  "sfx": "tungsten",
+  "t": 16.564,
+  "peak_db": -19.6,
+  "music_local_db": -1.6
+ },
+ {
+  "id": "slat-creak",
+  "sfx": "creak",
+  "t": 16.9088,
+  "peak_db": -17.9,
+  "music_local_db": -0.9
+ },
+ {
+  "id": "drop",
+  "sfx": "strum",
+  "t": 17.2536,
+  "peak_db": -9.4,
+  "music_local_db": -0.4
+ },
+ {
+  "id": "running",
+  "sfx": "dot_tik",
+  "t": 17.426,
+  "peak_db": -15.4,
+  "music_local_db": -0.4
+ },
+ {
+  "id": "neighbour-1",
+  "sfx": "far_click",
+  "t": 18.633,
+  "peak_db": -15.5,
+  "music_local_db": -0.5
+ },
+ {
+  "id": "neighbour-2",
+  "sfx": "far_click",
+  "t": 18.8054,
+  "peak_db": -15.5,
+  "music_local_db": -0.5
+ },
+ {
+  "id": "neighbour-3",
+  "sfx": "far_click",
+  "t": 19.1502,
+  "peak_db": -15.5,
+  "music_local_db": -0.5
+ },
+ {
+  "id": "drip-1",
+  "sfx": "drip",
+  "t": 18.7019,
+  "peak_db": -13.5,
+  "music_local_db": -0.5
+ },
+ {
+  "id": "the-look",
+  "sfx": "ratchet_small",
+  "t": 19.3226,
+  "peak_db": -15.5,
+  "music_local_db": -0.5
+ },
+ {
+  "id": "mention-1",
+  "sfx": "far_click",
+  "t": 20.0123,
+  "peak_db": -15.3,
+  "music_local_db": -0.3
+ },
+ {
+  "id": "mention-2",
+  "sfx": "far_click",
+  "t": 20.1847,
+  "peak_db": -15.3,
+  "music_local_db": -0.3
+ },
+ {
+  "id": "mention-3",
+  "sfx": "far_click",
+  "t": 20.5295,
+  "peak_db": -15.3,
+  "music_local_db": -0.3
+ },
+ {
+  "id": "mention-4",
+  "sfx": "far_click",
+  "t": 20.702,
+  "peak_db": -15.3,
+  "music_local_db": -0.3
+ },
+ {
+  "id": "mention-5",
+  "sfx": "far_click",
+  "t": 20.7882,
+  "peak_db": -15.3,
+  "music_local_db": -0.3
+ },
+ {
+  "id": "mention-6",
+  "sfx": "far_click",
+  "t": 20.9606,
+  "peak_db": -15.3,
+  "music_local_db": -0.3
+ },
+ {
+  "id": "draft-type",
+  "sfx": "typing",
+  "t": 22.0813,
+  "peak_db": -12.4,
+  "music_local_db": -0.4
+ },
+ {
+  "id": "approve",
+  "sfx": "ui_click",
+  "t": 23.1158,
+  "peak_db": -13.7,
+  "music_local_db": -0.7
+ },
+ {
+  "id": "published",
+  "sfx": "publish",
+  "t": 23.4606,
+  "peak_db": -7.7,
+  "music_local_db": -0.7
+ },
+ {
+  "id": "wave-back",
+  "sfx": "far_click",
+  "t": 23.8054,
+  "peak_db": -15.7,
+  "music_local_db": -0.7
+ },
+ {
+  "id": "more-like",
+  "sfx": "ui_click",
+  "t": 24.1503,
+  "peak_db": -13.1,
+  "music_local_db": -0.1
+ },
+ {
+  "id": "pin",
+  "sfx": "tape_slap",
+  "t": 24.8399,
+  "peak_db": -13.1,
+  "music_local_db": -0.1
+ },
+ {
+  "id": "trend",
+  "sfx": "trend",
+  "t": 25.5296,
+  "peak_db": -9.1,
+  "music_local_db": -0.1
+ },
+ {
+  "id": "choice",
+  "sfx": "blinds_ratchet",
+  "t": 26.2193,
+  "peak_db": -11.2,
+  "music_local_db": -0.2
+ },
+ {
+  "id": "payoff",
+  "sfx": "strum",
+  "t": 28.2883,
+  "peak_db": -9.3,
+  "music_local_db": -0.3
+ },
+ {
+  "id": "drip-2",
+  "sfx": "drip",
+  "t": 29.6676,
+  "peak_db": -12.8,
+  "music_local_db": 0.2
+ },
+ {
+  "id": "neighbour-4",
+  "sfx": "far_click",
+  "t": 30.3573,
+  "peak_db": -14.8,
+  "music_local_db": 0.2
+ }
+]

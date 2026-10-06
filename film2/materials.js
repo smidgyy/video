@@ -49,9 +49,9 @@ export function concrete({ w = 2400, h = 1400, seed = 1401, tone = '#c4c2ba', bo
   for (let y = tie[1] / 2; y < h; y += tie[1]) for (let x = tie[0] / 2; x < w; x += tie[0]) {
     const jx = x + (r() - 0.5) * 3, jy = y + (r() - 0.5) * 3;
     const gr = g.createRadialGradient(jx, jy, 0, jx, jy, 7);
-    gr.addColorStop(0, 'rgba(0,0,0,0.55)'); gr.addColorStop(0.6, 'rgba(0,0,0,0.25)'); gr.addColorStop(1, 'rgba(0,0,0,0)');
+    gr.addColorStop(0, 'rgba(0,0,0,0.38)'); gr.addColorStop(0.6, 'rgba(0,0,0,0.16)'); gr.addColorStop(1, 'rgba(0,0,0,0)');
     g.fillStyle = gr; g.beginPath(); g.arc(jx, jy, 7, 0, Math.PI * 2); g.fill();
-    g.strokeStyle = 'rgba(255,255,255,0.18)'; g.lineWidth = 1; g.beginPath(); g.arc(jx + 0.8, jy + 0.8, 5.5, Math.PI * 0.05, Math.PI * 0.6); g.stroke();
+    g.strokeStyle = 'rgba(255,255,255,0.12)'; g.lineWidth = 1; g.beginPath(); g.arc(jx + 0.8, jy + 0.8, 5.5, Math.PI * 0.05, Math.PI * 0.6); g.stroke();
   }
   // rain streaks under sills: vertical noise columns with exponential alpha
   for (const s of sills) {

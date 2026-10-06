@@ -78,7 +78,8 @@ class Piano:
 # ---------------------------------------------------------------- drums
 class Kit:
     def __init__(self, name):
-        d = os.path.join(SAMPLES, 'drums', name)
+        # 'studio-acoustic' -> samples/drums/<name>; 'hf/drumstudio-mallet-samples/orchestral-perc' -> samples/<path>
+        d = os.path.join(SAMPLES, name) if '/' in name else os.path.join(SAMPLES, 'drums', name)
         man = json.load(open(os.path.join(d, 'manifest.json')))
         self.pads = {}
         for p in man['pads']:
@@ -91,6 +92,10 @@ class Kit:
         zones = self.pads[label]
         v127 = int(np.clip(vel * 127, 1, 127))
         x = next((z[2] for z in zones if z[0] <= v127 <= z[1]), zones[-1][2])
+        # strip leading silence: start 1 ms before the first sample above 1% of the peak
+        thr = np.abs(x).max() * 0.01
+        i0 = int(np.argmax(np.abs(x) > thr)) if thr > 0 else 0
+        x = x[max(0, i0 - SR // 1000):]
         if tune:
             fr = Fraction(2 ** (tune / 12)).limit_denominator(400)
             x = signal.resample_poly(x, fr.denominator, fr.numerator)

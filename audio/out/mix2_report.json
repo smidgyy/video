@@ -1,0 +1,13 @@
+{
+ "integrated_lufs": -13.98,
+ "true_peak_dbtp": -1.54,
+ "iterations": 1,
+ "sr": 48000,
+ "duration": 35.8667,
+ "silence_absence_rms_db": -240.0,
+ "silence_choice_rms_db": -240.0,
+ "act1_rms_db": -26.8,
+ "act2_rms_db": -25.3,
+ "groove_rms_db": -13.8,
+ "payoff_rms_db": -12.4
+}

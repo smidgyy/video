@@ -117,11 +117,23 @@ export function drawWindow(g, cam, f, c, st, t) {
   g.save();
   g.beginPath(); g.rect(r.x, r.y, r.w, r.h); g.clip();
   g.fillStyle = '#050607'; g.fillRect(r.x, r.y, r.w, r.h);
-  if (st.cold) { // another tenant's cold tube light: colourless, flat, slightly blue
+  if (st.cold) { // another tenant's cold tube light: colourless; a fixture at the ceiling, the back wall falling off, furniture
+    const k = st.cold, rr = C.rng(f * 131 + c * 17 + 5);
     const gr = g.createLinearGradient(r.x, r.y, r.x, r.y + r.h);
-    gr.addColorStop(0, C.rgba('#e9f0f3', 0.9 * st.cold)); gr.addColorStop(1, C.rgba('#b9c6cc', 0.75 * st.cold));
+    gr.addColorStop(0, C.rgba('#e6edf0', 0.78 * k)); gr.addColorStop(0.3, C.rgba('#c4ced3', 0.6 * k)); gr.addColorStop(1, C.rgba('#6f7b81', 0.45 * k));
     g.fillStyle = gr; g.fillRect(r.x, r.y, r.w, r.h);
-    if (st.blind != null) { g.fillStyle = C.rgba('#d8dfe2', 0.95 * st.cold); g.fillRect(r.x, r.y, r.w, r.h * st.blind); g.fillStyle = 'rgba(0,0,0,0.25)'; g.fillRect(r.x, r.y + r.h * st.blind - 2, r.w, 2); }
+    g.fillStyle = C.rgba('#ffffff', 0.85 * k); g.fillRect(r.x + r.w * (0.18 + rr() * 0.2), r.y + 12, r.w * 0.42, 5);
+    g.fillStyle = C.rgba('#000000', 0.18 * k); g.fillRect(r.x + r.w * (0.55 + rr() * 0.3), r.y, 2, r.h);           // a room corner
+    for (let i = 0; i < 3; i++) {                                                                                      // furniture silhouettes
+      const w = 70 + rr() * 150, h = 40 + rr() * (r.h * 0.35), x = r.x + rr() * (r.w - w);
+      g.fillStyle = C.rgba('#2b3135', 0.6 * k); g.fillRect(x, r.y + r.h - h, w, h);
+      g.fillStyle = C.rgba('#ffffff', 0.08 * k); g.fillRect(x, r.y + r.h - h, w, 1);
+    }
+    if (st.blind != null) { // a roller blind, partly down
+      g.fillStyle = C.rgba('#cdd5d8', 0.92 * k); g.fillRect(r.x, r.y, r.w, r.h * st.blind);
+      g.fillStyle = C.rgba('#000000', 0.22); g.fillRect(r.x, r.y + r.h * st.blind - 3, r.w, 3);
+      g.fillStyle = C.rgba('#000000', 0.12); for (let y = r.y + 30; y < r.y + r.h * st.blind - 6; y += 30) g.fillRect(r.x, y, r.w, 1);
+    }
   }
   if (st.I > 0 || st.room > 0) drawRoom(g, cam, r, st);
   if (st.slats) {
@@ -209,11 +221,20 @@ export function drawGlass(gAdd, cam, f, c, light = 0.3, seed = 0) {
 }
 
 // Engraved line on the plinth: shadow/highlight pair offset along the light → text vector; opacity ∝ local light.
-function engrave(g, cam, spr, sprDark, x, y, light) {
+// lightX (world x) = where the light on the line is strongest; it falls off along the line (r0 = 520 world px).
+const ENG = (() => { const c = C.canvas(1400, 60); return { c, g: C.ctx2(c) }; })();
+function engrave(g, cam, spr, sprDark, x, y, light, lightX = x + 400) {
   if (light <= 0.005) return;
-  C.apply(g, cam);
-  g.globalAlpha = clamp(light) * 0.55; g.globalCompositeOperation = 'multiply'; g.drawImage(sprDark, x + 1.5, y + 1.5);
-  g.globalAlpha = clamp(light) * 0.45; g.globalCompositeOperation = 'screen'; g.drawImage(spr, x - 1, y - 1);
+  const e = ENG.g, w = spr.width, h = spr.height;
+  for (const [src, dx, op, a] of [[sprDark, 1.5, 'multiply', 0.5], [spr, -1, 'screen', 0.38]]) {
+    e.setTransform(1, 0, 0, 1, 0, 0); e.globalCompositeOperation = 'source-over'; e.clearRect(0, 0, ENG.c.width, ENG.c.height);
+    e.drawImage(src, 0, 0);
+    const gr = e.createLinearGradient(0, 0, w, 0);
+    for (let k = 0; k <= 10; k++) { const wx = x + (k / 10) * w; gr.addColorStop(k / 10, `rgba(0,0,0,${(1 / (1 + ((wx - lightX) / 520) ** 2)).toFixed(3)})`); }
+    e.globalCompositeOperation = 'destination-in'; e.fillStyle = gr; e.fillRect(0, 0, w, h);
+    C.apply(g, cam); g.globalAlpha = clamp(light) * a; g.globalCompositeOperation = op;
+    g.drawImage(ENG.c, 0, 0, w, h, x + dx, y + dx, w, h);
+  }
   g.globalAlpha = 1; g.globalCompositeOperation = 'source-over';
 }
 
@@ -264,7 +285,7 @@ C.shot('s12-wake', (t) => {
   const ang = slatAngles12(t);
   const openness = 1 - ang.reduce((s, a) => s + slatFace(a), 0) / 16;
   const tilt = clamp(invLerp(b(28), b(28.4), t));
-  const nb = [[b(27), 0, 0, 0.55], [b(27.25), 1, 1, 0.3], [b(27.75), 1, 4, 0.0]].map(([tt, f, c, bl]) => ({ f, c, bl, v: C.bulb(t, [[tt, 1]]) }));
+  const nb = [[b(27), 0, 1, 0.55], [b(27.25), 1, 2, 0.3], [b(27.75), 1, 3, 0.0]].map(([tt, f, c, bl]) => ({ f, c, bl, v: C.bulb(t, [[tt, 1]]) }));
   const st = (c) => ({ I: lamp, lamp: c === 2 ? [0.36, 0.40] : [-0.42, 0.40], slats: ang, print: c === 2, room: lamp, bent: c === 2, cord: c === 3 ? Math.sin((t - b(25)) * 5.6) * Math.exp(-Math.max(0, t - b(25)) / 1.2) * (t > b(25)) : null });
 
   // ---------- albedo
@@ -287,18 +308,19 @@ C.shot('s12-wake', (t) => {
     C.falloff(irr, cx, y1 + 8 * zoom, 120 * zoom, '#b8dd3a', 0.75 * leak, 4);
     C.falloff(irr, x0 - 4, (y0 + y1) / 2, 60 * zoom, '#a6c832', 0.35 * leak, 3);
     C.falloff(irr, x1 + 4, (y0 + y1) / 2, 60 * zoom, '#a6c832', 0.35 * leak, 3);
-    // plinth wash directly under the window
-    const pg = irr.createLinearGradient(0, y1, 0, y1 + 130 * zoom);
-    pg.addColorStop(0, C.rgba('#b2d63a', 0.42 * leak)); pg.addColorStop(1, C.rgba('#b2d63a', 0));
-    irr.fillStyle = pg; irr.fillRect(x0 - 20 * zoom, y1, w + 40 * zoom, 130 * zoom);
+    // plinth wash directly under the window: an elliptical falloff (light leaving the glass downward)
+    irr.save(); irr.translate(cx, y1 + 30 * zoom); irr.scale(2.1, 0.7);
+    C.falloff(irr, 0, 0, 110 * zoom, '#b2d63a', 0.5 * leak, 4); irr.restore();
     // bands on the pavement: one per open gap, each sliding from the façade toward the lens over 0.2 s
     for (let i = 0; i < 16; i++) {
       const t0 = b(25) + i * 0.031; if (t < t0) continue;
       const gap = 1 - slatFace(ang[i]); if (gap <= 0.03) continue;
       const slide = ease.outCubic(clamp((t - t0) / 0.2));
-      const vc = bandV(i, tilt) * slide, th = 26 * gap * (1 + vc / 900);
-      const fall = 1 / (1 + (vc / 900) ** 2);
-      stripe(irr, cam, gm, r.x + 6, r.x + r.w - 6, Math.max(0, vc - th / 2), vc + th / 2, C.rgba('#cdf247', 0.95 * gap * lamp * fall));
+      const vc = bandV(i, tilt) * slide, th = 22 * gap * (1 + vc / 1100);
+      const fall = (1 / (1 + (vc / 420) ** 2)) * (0.55 + 0.45 * slide);
+      const spread = 14 + vc * 0.05;   // penumbra widens with distance from the gap
+      stripe(irr, cam, gm, r.x - spread, r.x + r.w + spread, Math.max(0, vc - th / 2 - spread * 0.35), vc + th / 2 + spread * 0.35, C.rgba('#bfe63e', 0.28 * gap * lamp * fall));
+      stripe(irr, cam, gm, r.x + 6, r.x + r.w - 6, Math.max(0, vc - th / 2), vc + th / 2, C.rgba('#cdf247', 0.9 * gap * lamp * fall));
     }
   }
   // the dim leak under closed slats before the drop (lines of light at the slat seams on the sill)
@@ -317,7 +339,7 @@ C.shot('s12-wake', (t) => {
   for (const c of [2, 3]) drawWindow(g, cam, 0, c, st(c), t);
   // plinth: G·14 stencil and the engraved identity line, legible only in the manager's light
   const plinthLight = clamp(invLerp(b(24.2), b(24.9), t)) * clamp(leak * 1.6);
-  engrave(g, cam, TEX.ident, TEX.identDark, winX(2) + 150, PLINTH.top + 52, plinthLight);
+  engrave(g, cam, TEX.ident, TEX.identDark, winX(2) + 150, PLINTH.top + 52, plinthLight, winX(2) + 300);
   C.apply(g, cam); g.globalAlpha = 0.25 + 0.6 * plinthLight; g.globalCompositeOperation = 'screen'; g.drawImage(TEX.g14, winX(2) + 18, PLINTH.top + 26); g.globalAlpha = 1; g.globalCompositeOperation = 'source-over';
 
   // ---------- the sign: real chips on a hung card, between slats and glass, bay c3 lower right
@@ -337,7 +359,7 @@ C.shot('s12-wake', (t) => {
   const ml = C.L.mul; C.apply(ml, cam); ml.save(); ml.translate(sx, sy); ml.rotate((sa * Math.PI) / 180);
   ml.fillStyle = C.rgba('#4a5560', clamp(0.75 - lamp * 0.75)); roundRect(ml, 0, 0, 420, 134, 18); ml.fill(); ml.restore();
   const ad = C.L.add; C.apply(ad, cam); ad.save(); ad.translate(sx, sy); ad.rotate((sa * Math.PI) / 180);
-  ad.strokeStyle = C.rgba('#d4ff3f', 0.35 * lamp); ad.lineWidth = 2.5; ad.filter = 'blur(2px)'; roundRect(ad, -1, -1, 422, 136, 19); ad.stroke(); ad.filter = 'none'; ad.restore();
+  ad.strokeStyle = C.rgba('#c8ee3a', 0.13 * lamp); ad.lineWidth = 3; ad.filter = 'blur(3px)'; roundRect(ad, -1, -1, 422, 136, 19); ad.stroke(); ad.filter = 'none'; ad.restore();
 
   // ---------- glass, halation, lens
   for (let c = -1; c <= 6; c++) drawGlass(ad, cam, 0, c, c === 2 || c === 3 ? lamp * (0.3 + openness) : 0.1, c + 4);
