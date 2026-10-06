@@ -20,3 +20,7 @@ audio/out/song_edit.*
 audio/out/song_analysis.json
 audio/in/
 audio/out/stems/
+audio/out/music2.wav
+audio/out/mix2.wav
+audio/out/sfx2.wav
+audio/out/song_lyrics.json

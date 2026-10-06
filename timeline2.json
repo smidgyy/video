@@ -1,0 +1,987 @@
+{
+ "title": "Voice — One coin. A voice of its own.",
+ "page": "film2/index.html",
+ "fps": 60,
+ "duration": 35.8667,
+ "motionBlurSubframes": 1,
+ "audio": {
+  "music": "audio/out/music2.wav",
+  "grid": "audio/out/music2.json",
+  "sfx": "audio/out/sfx2.wav",
+  "mix": "audio/out/mix2.wav",
+  "song": "Kanye West feat. Pusha T — \"Runaway\" (user-supplied; licence is the client's responsibility)",
+  "bpm": 86.999,
+  "targetLufs": -14,
+  "truePeakMax": -1
+ },
+ "grid": {
+  "T0": 0.012,
+  "P": 0.689665,
+  "beats": 52.0
+ },
+ "formats": {
+  "16x9": {
+   "w": 1920,
+   "h": 1080,
+   "ship": true
+  }
+ },
+ "shots": [
+  {
+   "id": "s01-launch",
+   "ob": [
+    0.0,
+    4.0
+   ],
+   "start": 0.0,
+   "end": 2.7667,
+   "what": "FAÇADE day · \"Launching a coin takes seconds.\""
+  },
+  {
+   "id": "s02-exists",
+   "ob": [
+    4.0,
+    6.0
+   ],
+   "start": 2.7667,
+   "end": 4.15,
+   "what": "FAÇADE · Orbit window MCU · time-lapse to blue hour"
+  },
+  {
+   "id": "s03-quiet",
+   "ob": [
+    6.0,
+    8.5
+   ],
+   "start": 4.15,
+   "end": 5.8667,
+   "what": "FAÇADE rhyme frame · \"Then it goes quiet.\""
+  },
+  {
+   "id": "s04-absence",
+   "ob": [
+    8.5,
+    10.0
+   ],
+   "start": 5.8667,
+   "end": 6.9167,
+   "what": "UNIT A · moonlight · slips · first volt pixel"
+  },
+  {
+   "id": "s05-voice",
+   "ob": [
+    10.0,
+    12.0
+   ],
+   "start": 6.9167,
+   "end": 8.2833,
+   "what": "UNIT A · door glass · Voice silhouette"
+  },
+  {
+   "id": "s06-oneone",
+   "ob": [
+    12.0,
+    14.0
+   ],
+   "start": 8.2833,
+   "end": 9.6667,
+   "what": "UNIT A · \"One coin. One X Manager.\" · door opens"
+  },
+  {
+   "id": "s07-brain",
+   "ob": [
+    14.0,
+    16.0
+   ],
+   "start": 9.6667,
+   "end": 11.05,
+   "what": "UNIT A · leaning panes · GIVE IT A BRAIN."
+  },
+  {
+   "id": "s08-character",
+   "ob": [
+    16.0,
+    18.0
+   ],
+   "start": 11.05,
+   "end": 12.4333,
+   "what": "DESK · GIVE IT A CHARACTER."
+  },
+  {
+   "id": "s09-bounds",
+   "ob": [
+    18.0,
+    20.0
+   ],
+   "start": 12.4333,
+   "end": 13.8,
+   "what": "UNIT A · wall plate · GIVE IT BOUNDARIES."
+  },
+  {
+   "id": "s10-budget",
+   "ob": [
+    20.0,
+    22.0
+   ],
+   "start": 13.8,
+   "end": 15.1833,
+   "what": "UNIT A · meter · GIVE IT A BUDGET."
+  },
+  {
+   "id": "s11-launch",
+   "ob": [
+    22.0,
+    23.5
+   ],
+   "start": 15.1833,
+   "end": 16.2167,
+   "what": "DESK press → UNIT B sign + slats close"
+  },
+  {
+   "id": "s12-wake",
+   "ob": [
+    23.5,
+    29.0
+   ],
+   "start": 16.2167,
+   "end": 20.0167,
+   "what": "EXTERIOR · THE MANAGER WAKES UP"
+  },
+  {
+   "id": "s13-habits",
+   "ob": [
+    29.0,
+    37.0
+   ],
+   "start": 20.0167,
+   "end": 25.5333,
+   "what": "UNIT B one take · observe · think · draft · interact · learn"
+  },
+  {
+   "id": "s14-restraint",
+   "ob": [
+    37.0,
+    39.0
+   ],
+   "start": 25.5333,
+   "end": 26.9167,
+   "what": "UNIT B · the trend · chooses not to act"
+  },
+  {
+   "id": "s15-choice",
+   "ob": [
+    39.0,
+    41.0
+   ],
+   "start": 26.9167,
+   "end": 28.2833,
+   "what": "FAÇADE rhyme frame · \"Now quiet is a choice.\""
+  },
+  {
+   "id": "s16-voice",
+   "ob": [
+    41.0,
+    45.0
+   ],
+   "start": 28.2833,
+   "end": 31.05,
+   "what": "STREET plan · \"One coin. A voice of its own.\""
+  },
+  {
+   "id": "s17-end",
+   "ob": [
+    45.0,
+    52.0
+   ],
+   "start": 31.05,
+   "end": 35.8667,
+   "what": "window → logo · tryvoice.fun · @tryvoice"
+  }
+ ],
+ "events": [
+  {
+   "id": "card-1",
+   "ob": 0.25,
+   "t": 0.1844,
+   "sfx": "card_thup",
+   "what": "coin card taped into a window",
+   "target": null,
+   "pan": -0.6
+  },
+  {
+   "id": "card-2",
+   "ob": 0.5,
+   "t": 0.3568,
+   "sfx": "card_thup",
+   "what": "coin card taped into a window",
+   "target": null,
+   "pan": 0.3
+  },
+  {
+   "id": "card-3",
+   "ob": 1.0,
+   "t": 0.7017,
+   "sfx": "card_thup",
+   "what": "coin card taped into a window",
+   "target": null,
+   "pan": -0.2
+  },
+  {
+   "id": "card-4",
+   "ob": 1.25,
+   "t": 0.8741,
+   "sfx": "card_thup",
+   "what": "coin card taped into a window",
+   "target": null,
+   "pan": 0.7
+  },
+  {
+   "id": "card-5",
+   "ob": 1.75,
+   "t": 1.2189,
+   "sfx": "card_thup",
+   "what": "coin card taped into a window",
+   "target": null,
+   "pan": -0.8
+  },
+  {
+   "id": "card-6",
+   "ob": 2.25,
+   "t": 1.5637,
+   "sfx": "card_thup",
+   "what": "coin card taped into a window",
+   "target": null,
+   "pan": 0.5
+  },
+  {
+   "id": "card-7",
+   "ob": 2.5,
+   "t": 1.7362,
+   "sfx": "card_thup",
+   "what": "coin card taped into a window",
+   "target": null,
+   "pan": -0.4
+  },
+  {
+   "id": "card-8",
+   "ob": 3.0,
+   "t": 2.081,
+   "sfx": "card_thup",
+   "what": "coin card taped into a window",
+   "target": null,
+   "pan": 0.1
+  },
+  {
+   "id": "card-orbit",
+   "ob": 3.5,
+   "t": 2.4258,
+   "sfx": "card_thup",
+   "what": "Orbit $ORBIT taped last, ground floor c2",
+   "target": null,
+   "pan": 0.35,
+   "accent": true
+  },
+  {
+   "id": "word-1",
+   "ob": 0.0,
+   "t": 0.012,
+   "sfx": "tape_rasp",
+   "what": "window vinyl \"Launching\" peeled on",
+   "target": null
+  },
+  {
+   "id": "word-2",
+   "ob": 0.5,
+   "t": 0.3568,
+   "sfx": "tape_rasp",
+   "what": "window vinyl \"a coin\" peeled on",
+   "target": null
+  },
+  {
+   "id": "word-3",
+   "ob": 1.0,
+   "t": 0.7017,
+   "sfx": "tape_rasp",
+   "what": "window vinyl \"takes\" peeled on",
+   "target": null
+  },
+  {
+   "id": "word-4",
+   "ob": 1.5,
+   "t": 1.0465,
+   "sfx": "tape_rasp",
+   "what": "window vinyl \"seconds.\" peeled on",
+   "target": null
+  },
+  {
+   "id": "orbit-mcu",
+   "ob": 4.0,
+   "t": 2.7707,
+   "sfx": null,
+   "what": "dolly lands on Orbit window (piano E6)",
+   "target": null
+  },
+  {
+   "id": "tape-lift",
+   "ob": 5.25,
+   "t": 3.6327,
+   "sfx": "crackle",
+   "what": "tape corner lifts, card sags",
+   "target": null
+  },
+  {
+   "id": "live-dies",
+   "ob": 5.5,
+   "t": 3.8052,
+   "sfx": null,
+   "what": "LIVE dot blinks once and dies",
+   "target": null
+  },
+  {
+   "id": "tube-1",
+   "ob": 5.75,
+   "t": 3.9776,
+   "sfx": "tube_tink",
+   "what": "cold tube lights flick on",
+   "target": null
+  },
+  {
+   "id": "tube-2",
+   "ob": 5.875,
+   "t": 4.0638,
+   "sfx": "tube_tink",
+   "what": "cold tube lights flick on",
+   "target": null
+  },
+  {
+   "id": "tube-3",
+   "ob": 5.9375,
+   "t": 4.1069,
+   "sfx": "tube_tink",
+   "what": "cold tube lights flick on",
+   "target": null
+  },
+  {
+   "id": "quiet-lit",
+   "ob": 6.0,
+   "t": 4.15,
+   "sfx": null,
+   "what": "\"Then it goes quiet.\" lit (piano low E5)",
+   "target": null
+  },
+  {
+   "id": "then-off",
+   "ob": 7.0,
+   "t": 4.8397,
+   "sfx": "relay",
+   "what": "\"Then\" and its unit click off",
+   "target": null
+  },
+  {
+   "id": "itgoes-off",
+   "ob": 7.5,
+   "t": 5.1845,
+   "sfx": "relay",
+   "what": "\"it goes\" clicks off",
+   "target": null
+  },
+  {
+   "id": "g12-dies",
+   "ob": 7.75,
+   "t": 5.3569,
+   "sfx": "relay",
+   "what": "G·12 dies",
+   "target": null
+  },
+  {
+   "id": "quiet-dies",
+   "ob": 8.0,
+   "t": 5.5293,
+   "sfx": null,
+   "what": "\"quiet.\" flickers and dies — silence begins",
+   "target": null
+  },
+  {
+   "id": "stop-dies",
+   "ob": 8.4,
+   "t": 5.8052,
+   "sfx": null,
+   "what": "the full stop of \"quiet.\" dies last (P)",
+   "target": null
+  },
+  {
+   "id": "slip-now",
+   "ob": 9.0,
+   "t": 6.219,
+   "sfx": "paper_slide",
+   "what": "slip \"now\" slides under the door (stops 30 ms late)",
+   "target": null
+  },
+  {
+   "id": "first-volt",
+   "ob": 9.85,
+   "t": 6.8052,
+   "sfx": null,
+   "what": "first volt pixel: 1 px line under the door",
+   "target": null
+  },
+  {
+   "id": "voice-door",
+   "ob": 10.0,
+   "t": 6.9086,
+   "sfx": null,
+   "what": "door glass blooms; logo silhouette (piano C#6)",
+   "target": null
+  },
+  {
+   "id": "oneone-lit",
+   "ob": 12.0,
+   "t": 8.288,
+   "sfx": null,
+   "what": "\"One coin. One X Manager.\" revealed at bloom peak (piano C#6)",
+   "target": null
+  },
+  {
+   "id": "key-1",
+   "ob": 12.5,
+   "t": 8.6328,
+   "sfx": "key",
+   "what": "key turns",
+   "target": null
+  },
+  {
+   "id": "key-2",
+   "ob": 12.75,
+   "t": 8.8052,
+   "sfx": "key",
+   "what": "key turns",
+   "target": null
+  },
+  {
+   "id": "door-open",
+   "ob": 13.5,
+   "t": 9.3225,
+   "sfx": "hinge",
+   "what": "door opens; volt wedge sweeps the floor",
+   "target": null
+  },
+  {
+   "id": "luna-pick",
+   "ob": 14.0,
+   "t": 9.6673,
+   "sfx": "glass_tink",
+   "what": "GPT-6 Luna pane lifted into the light (piano C#6)",
+   "target": null
+  },
+  {
+   "id": "dymo-brain-a",
+   "ob": 14.5,
+   "t": 10.0121,
+   "sfx": "dymo_ghost",
+   "what": "\"GIVE IT\"",
+   "target": null
+  },
+  {
+   "id": "dymo-brain-b",
+   "ob": 15.0,
+   "t": 10.357,
+   "sfx": "dymo_slap",
+   "what": "\"A BRAIN.\"",
+   "target": null
+  },
+  {
+   "id": "humor-drag",
+   "ob": 16.25,
+   "t": 11.2191,
+   "sfx": "detents",
+   "what": "Humor 50 → 87 → 85 (piano C#5)",
+   "target": null,
+   "dur": 0.65
+  },
+  {
+   "id": "dymo-char-a",
+   "ob": 16.5,
+   "t": 11.3915,
+   "sfx": "dymo_ghost",
+   "what": "\"GIVE IT\"",
+   "target": null
+  },
+  {
+   "id": "dymo-char-b",
+   "ob": 17.0,
+   "t": 11.7363,
+   "sfx": "dymo_slap",
+   "what": "\"A CHARACTER.\"",
+   "target": null
+  },
+  {
+   "id": "toggle-1",
+   "ob": 18.25,
+   "t": 12.5984,
+   "sfx": "switch_thock",
+   "what": "Read mentions OFF → ON",
+   "target": null
+  },
+  {
+   "id": "toggle-2",
+   "ob": 18.375,
+   "t": 12.6846,
+   "sfx": "switch_thock",
+   "what": "Community interaction OFF → ON",
+   "target": null
+  },
+  {
+   "id": "toggle-3",
+   "ob": 18.5,
+   "t": 12.7708,
+   "sfx": "switch_thock",
+   "what": "Relationship memory OFF → ON",
+   "target": null
+  },
+  {
+   "id": "dymo-bound-a",
+   "ob": 18.75,
+   "t": 12.9432,
+   "sfx": "dymo_ghost",
+   "what": "\"GIVE IT\"",
+   "target": null
+  },
+  {
+   "id": "dymo-bound-b",
+   "ob": 19.0,
+   "t": 13.1156,
+   "sfx": "dymo_slap",
+   "what": "\"BOUNDARIES.\"",
+   "target": null
+  },
+  {
+   "id": "odometer",
+   "ob": 20.25,
+   "t": 13.9777,
+   "sfx": "ratchet",
+   "what": "Daily maximum 0.00 → 5.00",
+   "target": null,
+   "dur": 0.5
+  },
+  {
+   "id": "dymo-budget-a",
+   "ob": 20.5,
+   "t": 14.1501,
+   "sfx": "dymo_ghost",
+   "what": "\"GIVE IT\"",
+   "target": null
+  },
+  {
+   "id": "dymo-budget-b",
+   "ob": 21.0,
+   "t": 14.495,
+   "sfx": "dymo_slap",
+   "what": "\"A BUDGET.\"",
+   "target": null
+  },
+  {
+   "id": "sign-press",
+   "ob": 22.0,
+   "t": 15.1846,
+   "sfx": "button_thock",
+   "what": "Review & sign in wallet pressed (piano G#5); fingerprint stays",
+   "target": null
+  },
+  {
+   "id": "sign-hang",
+   "ob": 22.75,
+   "t": 15.7019,
+   "sfx": "cord",
+   "what": "PAUSED sign drops behind the glass",
+   "target": null
+  },
+  {
+   "id": "slats-close",
+   "ob": 23.25,
+   "t": 16.0467,
+   "sfx": "blinds_cascade",
+   "what": "slats close top-to-bottom: the room closes its eyes",
+   "target": null
+  },
+  {
+   "id": "switch-go",
+   "ob": 23.75,
+   "t": 16.3915,
+   "sfx": "switch",
+   "what": "light switch inside: the creator says go; ember",
+   "target": null
+  },
+  {
+   "id": "ignition",
+   "ob": 24.0,
+   "t": 16.564,
+   "sfx": "tungsten",
+   "what": "pulse filament ignites behind closed slats (piano E6 pickup)",
+   "target": null
+  },
+  {
+   "id": "slat-creak",
+   "ob": 24.5,
+   "t": 16.9088,
+   "sfx": "creak",
+   "what": "thermal slat creak; slat instructions read in silhouette",
+   "target": null
+  },
+  {
+   "id": "drop",
+   "ob": 25.0,
+   "t": 17.2536,
+   "sfx": "strum",
+   "what": "THE DROP: slats open in a wave, stripes race to the lens",
+   "target": null
+  },
+  {
+   "id": "running",
+   "ob": 25.25,
+   "t": 17.426,
+   "sfx": "dot_tik",
+   "what": "pill: Paused until you say go → Running · Approval Mode",
+   "target": null
+  },
+  {
+   "id": "sign-plumb",
+   "ob": 26.0,
+   "t": 17.9433,
+   "sfx": null,
+   "what": "sign settles at exactly 0.00° (first perfect register)",
+   "target": null
+  },
+  {
+   "id": "first-words",
+   "ob": 26.25,
+   "t": 18.1157,
+   "sfx": null,
+   "what": "\"Your manager is active. Its launch hour has started.\" lights",
+   "target": null
+  },
+  {
+   "id": "neighbour-1",
+   "ob": 27.0,
+   "t": 18.633,
+   "sfx": "far_click",
+   "what": "neighbour window answers",
+   "target": null,
+   "pan": -0.7
+  },
+  {
+   "id": "neighbour-2",
+   "ob": 27.25,
+   "t": 18.8054,
+   "sfx": "far_click",
+   "what": "neighbour window answers",
+   "target": null,
+   "pan": -0.4
+  },
+  {
+   "id": "neighbour-3",
+   "ob": 27.75,
+   "t": 19.1502,
+   "sfx": "far_click",
+   "what": "neighbour window answers",
+   "target": null,
+   "pan": 0.6
+  },
+  {
+   "id": "drip-1",
+   "ob": 27.1,
+   "t": 18.7019,
+   "sfx": "drip",
+   "what": "drip from the sill into the puddle",
+   "target": null
+  },
+  {
+   "id": "the-look",
+   "ob": 28.0,
+   "t": 19.3226,
+   "sfx": "ratchet_small",
+   "what": "slats tilt down: it looks at us",
+   "target": null
+  },
+  {
+   "id": "lens-stripe",
+   "ob": 28.5,
+   "t": 19.6675,
+   "sfx": null,
+   "what": "a stripe crosses the lens (+10% exposure, 5 frames)",
+   "target": null
+  },
+  {
+   "id": "mention-1",
+   "ob": 29.0,
+   "t": 20.0123,
+   "sfx": "far_click",
+   "what": "window across the street lights: a mention",
+   "target": null,
+   "pan": 0.5
+  },
+  {
+   "id": "mention-2",
+   "ob": 29.25,
+   "t": 20.1847,
+   "sfx": "far_click",
+   "what": "window across the street lights: a mention",
+   "target": null,
+   "pan": 0.2
+  },
+  {
+   "id": "mention-3",
+   "ob": 29.75,
+   "t": 20.5295,
+   "sfx": "far_click",
+   "what": "window across the street lights: a mention",
+   "target": null,
+   "pan": 0.7
+  },
+  {
+   "id": "mention-4",
+   "ob": 30.0,
+   "t": 20.702,
+   "sfx": "far_click",
+   "what": "window across the street lights: a mention",
+   "target": null,
+   "pan": 0.35
+  },
+  {
+   "id": "mention-5",
+   "ob": 30.125,
+   "t": 20.7882,
+   "sfx": "far_click",
+   "what": "window across the street lights: a mention",
+   "target": null,
+   "pan": 0.6
+  },
+  {
+   "id": "mention-6",
+   "ob": 30.375,
+   "t": 20.9606,
+   "sfx": "far_click",
+   "what": "window across the street lights: a mention",
+   "target": null,
+   "pan": 0.1
+  },
+  {
+   "id": "row-read",
+   "ob": 30.0,
+   "t": 20.702,
+   "sfx": null,
+   "what": "Decisions: Read mentions · Complete · Example",
+   "target": null
+  },
+  {
+   "id": "recall-joke",
+   "ob": 30.75,
+   "t": 21.2192,
+   "sfx": null,
+   "what": "lamp pool slides to JOKE plaque",
+   "target": null
+  },
+  {
+   "id": "recall-lore",
+   "ob": 31.25,
+   "t": 21.564,
+   "sfx": null,
+   "what": "lamp pool slides to LORE plaque",
+   "target": null
+  },
+  {
+   "id": "draft-type",
+   "ob": 32.0,
+   "t": 22.0813,
+   "sfx": "typing",
+   "what": "approval card types its draft word by word",
+   "target": null,
+   "dur": 1.35
+  },
+  {
+   "id": "approve",
+   "ob": 33.5,
+   "t": 23.1158,
+   "sfx": "ui_click",
+   "what": "Approve & publish pressed",
+   "target": null
+  },
+  {
+   "id": "published",
+   "ob": 34.0,
+   "t": 23.4606,
+   "sfx": "publish",
+   "what": "row: Original post · Published · Example",
+   "target": null
+  },
+  {
+   "id": "reply",
+   "ob": 34.25,
+   "t": 23.633,
+   "sfx": null,
+   "what": "row: Reply · Published · Example",
+   "target": null
+  },
+  {
+   "id": "wave-back",
+   "ob": 34.5,
+   "t": 23.8054,
+   "sfx": "far_click",
+   "what": "one window across the street flicks twice; its blind lifts",
+   "target": null,
+   "pan": 0.75
+  },
+  {
+   "id": "more-like",
+   "ob": 35.0,
+   "t": 24.1503,
+   "sfx": "ui_click",
+   "what": "More like this pressed",
+   "target": null
+  },
+  {
+   "id": "toast",
+   "ob": 35.25,
+   "t": 24.3227,
+   "sfx": null,
+   "what": "toast: Saved as \"more like this\"…",
+   "target": null
+  },
+  {
+   "id": "pin",
+   "ob": 36.0,
+   "t": 24.8399,
+   "sfx": "tape_slap",
+   "what": "card pinned to the plaque wall, corrected to 0.0°",
+   "target": null
+  },
+  {
+   "id": "trend",
+   "ob": 37.0,
+   "t": 25.5296,
+   "sfx": "trend",
+   "what": "rooftop LED trend flares (the only out-of-key sound)",
+   "target": null
+  },
+  {
+   "id": "tempted",
+   "ob": 37.25,
+   "t": 25.702,
+   "sfx": null,
+   "what": "slats tilt toward the screen; lamp rises 15%",
+   "target": null
+  },
+  {
+   "id": "choice",
+   "ob": 38.0,
+   "t": 26.2193,
+   "sfx": "blinds_ratchet",
+   "what": "it chooses: slats tilt shut; band filter closes",
+   "target": null
+  },
+  {
+   "id": "row-nothing",
+   "ob": 38.5,
+   "t": 26.5641,
+   "sfx": null,
+   "what": "row: Chose to do nothing · No action · Example",
+   "target": null
+  },
+  {
+   "id": "silence-2",
+   "ob": 39.0,
+   "t": 26.9089,
+   "sfx": null,
+   "what": "the band is gone: chosen quiet (cut to S15)",
+   "target": null
+  },
+  {
+   "id": "now-lit",
+   "ob": 39.5,
+   "t": 27.2538,
+   "sfx": null,
+   "what": "\"Now\" lights",
+   "target": null
+  },
+  {
+   "id": "choice-lit",
+   "ob": 40.0,
+   "t": 27.5986,
+   "sfx": null,
+   "what": "\"is a choice.\" lights volt (piano E6, the song's own ending)",
+   "target": null
+  },
+  {
+   "id": "payoff",
+   "ob": 41.0,
+   "t": 28.2883,
+   "sfx": "strum",
+   "what": "PAYOFF: vocoder outro; 16 light bands bloom across the street",
+   "target": null
+  },
+  {
+   "id": "drip-2",
+   "ob": 43.0,
+   "t": 29.6676,
+   "sfx": "drip",
+   "what": "drip ring in the puddle",
+   "target": null
+  },
+  {
+   "id": "neighbour-4",
+   "ob": 44.0,
+   "t": 30.3573,
+   "sfx": "far_click",
+   "what": "a neighbour switches on",
+   "target": null,
+   "pan": -0.6
+  },
+  {
+   "id": "logo-morph",
+   "ob": 45.0,
+   "t": 31.0469,
+   "sfx": null,
+   "what": "window becomes the logo",
+   "target": null
+  },
+  {
+   "id": "lockup",
+   "ob": 46.25,
+   "t": 31.909,
+   "sfx": null,
+   "what": "voice. lights letter by letter; lime dot on P",
+   "target": null
+  },
+  {
+   "id": "url",
+   "ob": 46.75,
+   "t": 32.2538,
+   "sfx": null,
+   "what": "tryvoice.fun",
+   "target": null
+  },
+  {
+   "id": "handle",
+   "ob": 47.25,
+   "t": 32.5987,
+   "sfx": null,
+   "what": "@tryvoice",
+   "target": null
+  },
+  {
+   "id": "band-stop",
+   "ob": 49.0,
+   "t": 33.8056,
+   "sfx": null,
+   "what": "band stops; the final piano E rings (the song's last note)",
+   "target": null
+  },
+  {
+   "id": "exhale",
+   "ob": 50.5,
+   "t": 34.8401,
+   "sfx": null,
+   "what": "tile light dims last (−30%)",
+   "target": null
+  }
+ ]
+}

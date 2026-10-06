@@ -1,0 +1,17 @@
+{
+  "source": "audio/in/runaway.mp3 (user-supplied; not committed)",
+  "method": "global fit of onset envelopes (piano 0-20 s, groove 21-44 s, verse 88-140 s, 200-300 s, outro 308-330 s); all sections agree within 4 ms",
+  "T0": 0.004,
+  "P": 0.689665,
+  "bpm": 86.999,
+  "downbeat_mod4": 3,
+  "notes": {
+    "riff": "solo piano, one note per 2 beats: E6 k0, E6 k2, E6 k4, E5 k6 | D#6 k8, k10, k12, D#5 k14 | C#6 k16, k18, k20, C#5 k22 | A5 k24, A5 k26, G#5 k28 | E6 k30 (pickup)",
+    "drop": "k31 (21.384 s): drums + bass enter, level -26 -> -7 dB RMS",
+    "clean_groove": "k31..k64 (no lyrics until 45.16 s)",
+    "first_lyric": "45.16 s (k65.5): explicit hook - never used",
+    "vocoder_outro": "k447..k478 (308.28-330.35 s): E (k447) | B/D# (k455) | C#m (k463) | A (k471); no intelligible lyrics",
+    "band_stop": "k479 (330.354 s)",
+    "final_piano": "E6 k480, E6 k482, E6 k484, E5+E6 k486, ring to ~339 s"
+  }
+}

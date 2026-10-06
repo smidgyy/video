@@ -1,0 +1,16 @@
+/* film2 stage. No transitions, animations or will-change anywhere: seek(t) is the only clock. */
+html, body { margin: 0; padding: 0; background: #0a0a0c; overflow: hidden; }
+#stage { position: relative; width: 1920px; height: 1080px; overflow: hidden; background: #0a0a0c; isolation: isolate; }
+#stage > canvas, #grain, #vig { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; pointer-events: none; }
+#ui { position: absolute; left: 0; top: 0; width: 1920px; height: 1080px; overflow: hidden; }
+#ui > .ui-item { position: absolute; left: 0; top: 0; transform-origin: 0 0; visibility: hidden; }
+#mul { mix-blend-mode: multiply; }
+#add { mix-blend-mode: screen; }
+#grain { mix-blend-mode: soft-light; background-repeat: repeat; opacity: 0.045; }
+#vig { background: radial-gradient(ellipse 75% 70% at 50% 48%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.55) 100%); mix-blend-mode: multiply; opacity: 1; }
+
+/* Real product UI inside the film: the site's own CSS, three film overrides only. */
+.film .panel, .film [class*="glass"] { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+.film .ui-item { --glow-off: 1; }
+/* Act I: the real coin cards, de-volted through tokens (not a filter), so the UI stays the UI. */
+.colourless { --volt: #bdbdb6; --volt-2: #a9a9a2; --volt-deep: #7d7d77; --ice: #9aa0a3; --coin: #bdbdb6; --lime: #bdbdb6; }

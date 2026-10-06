@@ -1,0 +1,63 @@
+{
+ "comment": "Output beats (ob): 0-8 riff E group | 8-10 silence | 10-25 riff from C#6 (k16) | 25 DROP (k31) | 25-38 groove | 38 filter closes | 39 silence | 40 lone E6 (song's ending, k480) | 41-49 vocoder outro (k447, E) | 49 final piano E5+E6 (k486) rings | payoff uses demucs stems minus vocals (removes the tail of the last hook word at k447-448)",
+ "segments": [
+  {
+   "k": 0,
+   "beats": 8,
+   "lp": [
+    9000,
+    9000
+   ],
+   "width": [
+    0.75,
+    0.75
+   ],
+   "fade_out_s": 0.45
+  },
+  {
+   "silence": 2
+  },
+  {
+   "k": 16,
+   "beats": 15,
+   "lp": [
+    8000,
+    12000
+   ],
+   "width": [
+    0.75,
+    0.9
+   ]
+  },
+  {
+   "k": 31,
+   "beats": 13
+  },
+  {
+   "k": 44,
+   "beats": 1,
+   "lp": [
+    14000,
+    350
+   ]
+  },
+  {
+   "silence": 1
+  },
+  {
+   "k": 480,
+   "beats": 1
+  },
+  {
+   "k": 447,
+   "beats": 8,
+   "src": "stem:b:drums+bass+other"
+  },
+  {
+   "k": 486,
+   "beats": 3,
+   "fade_out_s": 1.2
+  }
+ ],
+ "final_silence_s": 0.1
+}
