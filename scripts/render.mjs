@@ -17,7 +17,8 @@ import crypto from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const timeline = JSON.parse(fs.readFileSync(path.join(ROOT, 'timeline.json'), 'utf8'));
+const TL_FILE = (() => { const i = process.argv.indexOf('--timeline'); return i > 0 ? process.argv[i + 1] : 'timeline.json'; })();
+const timeline = JSON.parse(fs.readFileSync(path.join(ROOT, TL_FILE), 'utf8'));
 const FORMATS = timeline.formats;
 
 // ---------- args ----------
@@ -71,7 +72,7 @@ async function openPage(browser, fmt) {
   const page = await ctx.newPage();
   page.on('pageerror', (e) => console.error(`[${fmt}] pageerror:`, e.message));
   page.on('console', (m) => { if (m.type() === 'error') console.error(`[${fmt}] console:`, m.text()); });
-  await page.goto(`${BASE}/film/index.html?format=${fmt}`, { waitUntil: 'load' });
+  await page.goto(`${BASE}/${timeline.page || "film/index.html"}?format=${fmt}`, { waitUntil: "load" });
   await page.waitForFunction(() => window.__ready !== undefined, null, { timeout: 60000 });
   await page.evaluate(() => window.__ready);
   await page.evaluate(() => { window.__armed = true; });

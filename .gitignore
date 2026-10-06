@@ -10,3 +10,12 @@ review/*/16x9.mp4
 review/r0/
 review/*pre/
 review/detdiag/
+__pycache__/
+# third-party reference media (study only, never redistributed)
+capture/refs/eleven_upload/
+# scratch / test audio and anything cut from a supplied song
+audio/out/tests/
+audio/out/vo_tests/
+audio/out/song_edit.*
+audio/out/song_analysis.json
+audio/in/

@@ -7,7 +7,7 @@ import { fileURLToPath } from 'node:url';
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const files = [];
 const walk = (d) => { for (const f of fs.readdirSync(d)) { const p = path.join(d, f); fs.statSync(p).isDirectory() ? walk(p) : /\.(m?js|css|html)$/.test(f) && files.push(p); } };
-['film', 'engine', 'assets/vendor'].forEach((d) => fs.existsSync(path.join(ROOT, d)) && walk(path.join(ROOT, d)));
+['film', 'film2', 'engine', 'assets/vendor'].forEach((d) => fs.existsSync(path.join(ROOT, d)) && walk(path.join(ROOT, d)));
 
 const rules = [
   [/requestAnimationFrame/, 'requestAnimationFrame'],
