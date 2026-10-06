@@ -19,3 +19,4 @@ audio/out/vo_tests/
 audio/out/song_edit.*
 audio/out/song_analysis.json
 audio/in/
+audio/out/stems/
